@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://dingpc000.github.io/2019/08/19/create-a-blog-by-hexo/github_io_repositories.png">
 <meta property="og:image" content="https://dingpc000.github.io/2019/08/19/create-a-blog-by-hexo/show.png">
-<meta property="og:updated_time" content="2019-08-20T06:29:21.057Z">
+<meta property="og:updated_time" content="2019-08-20T06:31:51.681Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建个人博客：Hexo配置+NEXT主题配置">
 <meta name="twitter:description" content="什么是HEXOHexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Heroku上，是搭建博客的首选框架。这里我们选用的是GitHub这是我的个人博客效果Byron‘s以及个人github项目地址https://github.com/dingpc000/dingpc000.github.io Github创建个人仓库登录到GitHub，注册个">
@@ -358,7 +358,7 @@
         <h1 id="什么是HEXO"><a href="#什么是HEXO" class="headerlink" title="什么是HEXO"></a>什么是HEXO</h1><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Heroku上，是搭建博客的首选框架。这里我们选用的是GitHub<br>这是我的个人博客效果<a href="https://dingpc000.github.io">Byron‘s</a><br>以及个人github项目地址<a href="https://github.com/dingpc000/dingpc000.github.io" target="_blank" rel="noopener">https://github.com/dingpc000/dingpc000.github.io</a></p>
 <h1 id="Github创建个人仓库"><a href="#Github创建个人仓库" class="headerlink" title="Github创建个人仓库"></a>Github创建个人仓库</h1><p>登录到<a href="https://github.com" target="_blank" rel="noopener">GitHub</a>，注册个人账号以后,新建repositories，并以username.github.io的形式命名，例如我的就是<img src="/2019/08/19/create-a-blog-by-hexo/github_io_repositories.png" alt="github repositories"></p>
 <h1 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h1><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>基于<a href="https://link.zhihu.com/?target=https%3A//nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a>，点击链接下载安装包，注意安装Node.js会包含环境变量及npm的安装，安装后，检测Node.js是否安装成功，在命令行中输入，<br><code>node -V</code><br><code>v10.16.3</code><br>检测npm是否安装成功，在命令行中输入:<br><code>npm -v</code><br><code>6.9.0</code><br>到这里hexo的环境就已经配置完成</p>
-<h1 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h1><p>Hexo就是我们的个人博客网站的框架， 这里需要自己在电脑常里创建一个文件夹，可以命名为Blog，Hexo框架与以后你自己发布的网页都在这个文件夹中。创建好后，进入文件夹中，按住shift键，右击鼠标运行Git Bash,使用npm命令安装Hexo，输入：<br><code>npm install -g hexo-cli</code><br>完成安装后，同样在该文件夹下，输入命令来初始化博客：<br><code>hexo init blog</code><br>为了检验我们已经完成配置，输入一下几个命令：</p>
+<h1 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h1><p>Hexo就是我们的个人博客网站的框架， 这里需要自己在电脑常里创建一个文件夹，可以命名为Blog，Hexo框架与以后你自己发布的网页都在这个文件夹中。创建好后，进入文件夹中，按住shift键，右击鼠标运行Git Bash,使用npm命令安装Hexo，输入：<br><code>npm install -g hexo-cli</code><br>完成安装后，同样在该文件夹下，输入命令来初始化博客：<br><code>hexo init blog</code><br>为了检验我们已经完成配置，输入以下几个命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new test_site</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 <p>完成后打开浏览器输入地址：<a href="localhost:4000" target="_blank" rel="noopener">localhost:4000</a>,可以看到博客显示<br>以下是常见的hexo命令：<br>npm install hexo -g #安装Hexo<br>npm update hexo -g #升级<br>hexo init #初始化博客</p>
