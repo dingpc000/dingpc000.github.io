@@ -82,18 +82,18 @@
 <meta name="description" content="git push 本地代码到github出错刚创建的github版本库，使用命令 $ git push -u origin master 发生错误  这是因为远程repository和本地的repository冲突导致的，有如下几种解决方案： 1.使用强制push的办法 $ git push -u origin master -f 这样会使得远程修改丢失，对于多人协作开发的时候不可取 2.先将远程">
 <meta name="keywords" content="github,git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github_problem">
+<meta property="og:title" content="git使用过程中的一些问题及解决方案">
 <meta property="og:url" content="https://dingpc000.github.io/2019/08/21/github-problem/index.html">
 <meta property="og:site_name" content="Byron&#39;s blog">
 <meta property="og:description" content="git push 本地代码到github出错刚创建的github版本库，使用命令 $ git push -u origin master 发生错误  这是因为远程repository和本地的repository冲突导致的，有如下几种解决方案： 1.使用强制push的办法 $ git push -u origin master -f 这样会使得远程修改丢失，对于多人协作开发的时候不可取 2.先将远程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://dingpc000.github.io/2019/08/21/github-problem/github-problem%5Ccurrent_branch_behind_its_remote_counter_part.png">
-<meta property="og:image" content="https://dingpc000.github.io/2019/08/21/github-problem/github-problem%5Creufusing_to_merge_unrelated_histories.png">
-<meta property="og:updated_time" content="2019-08-21T13:09:54.129Z">
+<meta property="og:image" content="https://dingpc000.github.io/2019/08/21/github-problem/current_branch_behind_its_remote_counter_part.png">
+<meta property="og:image" content="https://dingpc000.github.io/2019/08/21/github-problem/reufusing_to_merge_unrelated_histories.png">
+<meta property="og:updated_time" content="2019-08-21T13:16:44.736Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="github_problem">
+<meta name="twitter:title" content="git使用过程中的一些问题及解决方案">
 <meta name="twitter:description" content="git push 本地代码到github出错刚创建的github版本库，使用命令 $ git push -u origin master 发生错误  这是因为远程repository和本地的repository冲突导致的，有如下几种解决方案： 1.使用强制push的办法 $ git push -u origin master -f 这样会使得远程修改丢失，对于多人协作开发的时候不可取 2.先将远程">
-<meta name="twitter:image" content="https://dingpc000.github.io/2019/08/21/github-problem/github-problem%5Ccurrent_branch_behind_its_remote_counter_part.png">
+<meta name="twitter:image" content="https://dingpc000.github.io/2019/08/21/github-problem/current_branch_behind_its_remote_counter_part.png">
 
 
 
@@ -129,7 +129,7 @@
 
 
 
-  <title>github_problem | Byron's blog</title>
+  <title>git使用过程中的一些问题及解决方案 | Byron's blog</title>
   
 
 
@@ -283,7 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">github_problem</h1>
+          <h1 class="post-title" itemprop="name headline">git使用过程中的一些问题及解决方案</h1>
         
 
         <div class="post-meta">
@@ -318,8 +318,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/积累/" itemprop="url" rel="index">
-                    <span itemprop="name">积累</span>
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
                   </a>
                 </span>
 
@@ -358,7 +358,7 @@
         <h1 id="git-push-本地代码到github出错"><a href="#git-push-本地代码到github出错" class="headerlink" title="git push 本地代码到github出错"></a>git push 本地代码到github出错</h1><p>刚创建的github版本库，使用命令</p>
 <p><code>$ git push -u origin master</code></p>
 <p>发生错误</p>
-<p><img src="/2019/08/21/github-problem/github-problem%5Ccurrent_branch_behind_its_remote_counter_part.png" alt="current_branch_behind_its_remote_counter_part"></p>
+<p><img src="/2019/08/21/github-problem/current_branch_behind_its_remote_counter_part.png" alt="current_branch_behind_its_remote_counter_part"></p>
 <p>这是因为远程repository和本地的repository冲突导致的，有如下几种解决方案：</p>
 <p>1.使用强制push的办法</p>
 <p><code>$ git push -u origin master -f</code></p>
@@ -371,7 +371,7 @@
 
 <h1 id="pull的时候fatal-refusing-to-merge-unrelated-histories"><a href="#pull的时候fatal-refusing-to-merge-unrelated-histories" class="headerlink" title="pull的时候fatal: refusing to merge unrelated histories"></a>pull的时候fatal: refusing to merge unrelated histories</h1><p>当我使用命令，出现错误</p>
 <p><code>$ git pull origin master</code></p>
-<p><img src="/2019/08/21/github-problem/github-problem%5Creufusing_to_merge_unrelated_histories.png" alt="fatal: refusing to merge unrelated histories"></p>
+<p><img src="/2019/08/21/github-problem/reufusing_to_merge_unrelated_histories.png" alt="fatal: refusing to merge unrelated histories"></p>
 <p>你可能会在<code>git pull</code>或者<code>git push</code>中都有可能会遇到，这是因为两个分支没有取得关系。</p>
 <p>解决方案是在命令后面加–allow-unrelated-histories，例如：</p>
 <p><code>$ git pull origin master --allow-unrelated-histories</code></p>
@@ -505,7 +505,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
